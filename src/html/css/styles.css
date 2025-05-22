@@ -1,0 +1,182 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('NAGA COLLEGE FOUNDATION INC. HOME OF THE CHAMPION.png') no-repeat center center fixed; /* Replace with your image URL */
+  background-size: 50%; /* Ensures the background image covers the entire body */
+  background-color:#0d4418;
+  /*padding-top: 80px;  Space for the fixed header */
+}
+
+header {
+  position: fixed; /* Fixes it relative to the viewport */
+  top: 0;          /* Positions it at the very top */
+  left: 0;         /* Aligns it to the left edge */
+  width: 100%;     /* Makes it span the full width of the viewport */
+  background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 15px 20px; /* Adjust padding as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;   /* Ensures it stays on top of other content */
+  display: flex; /* For internal alignment */
+  justify-content: center; /* Center the content */
+  align-items: center;
+
+}
+
+main {
+  width: 100%;
+}
+
+.namelogo {
+  position: fixed;
+  top: -50px;  /* slight offset from the top */
+  left: 80px; /* slight offset from the left */
+  z-index: 1000; /* ensure it stays on top */
+}
+.namelogo .ncf {
+  width: 500px; /* fixed width for the logo */
+  height: 200px; /* maintain aspect ratio */
+  display: block;
+}
+
+.navbar {
+  width: 1200px;
+  height: 70px;
+  margin-left: 500px;
+}
+
+ul {
+  float:left;
+  display: flex;
+  justify-content: center;
+
+  align-items:center;
+  text-align:center;
+}
+ul li {
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: Arial;
+  font-weight: bolder;
+  transition: 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color:rgba(229, 253, 11, 0.904);
+}
+
+.logins h2 {
+  color: rgb(253, 238, 25);
+  font-family: sans-serif;
+  padding-left: 1px;
+  letter-spacing: 2px;
+  
+}
+
+.logins button {
+  margin-top: 15px;
+  transition: 0.3s ease-in-out;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(115, 245, 250, 0.6);
+}
+
+.logins {
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(to top, rgba(0, 0, 0 ,0.8)50%, rgba(0, 0, 0 ,0.8)50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 50%;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.logins input{
+  width: 250px;
+  height: 35px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  background: transparent;
+  border-bottom: 1px solid #000000;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  font-family: Arial;
+}
+
+.loginbtn {
+  width: 240px;
+  height: 40px;
+  background-color: #00b150;
+  border-radius: 15px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  cursor: pointer;
+}
+
+.loginbtn:hover {
+  background: white;
+}
+
+.loginbtn a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-left: 1px;
+  letter-spacing: 1px;
+}
+
+.menuss {
+  margin-top: 15%;
+  background: white;
+  margin-bottom: 40px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  font-size: 25px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
+}
+
+.menuss h2 {
+  color: #1e293b;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  border-bottom: 4px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 6px;
+  letter-spacing: 1.4px;
+}
+
+/* style.css */
+
+.error-message {
+  color: #dc3545; /* A common red color for errors */
+  background-color: #f8d7da; /* Light red background */
+  border: 1px solid #f5c6cb; /* Slightly darker red border */
+  padding: 10px 15px; /* Padding inside the message box */
+  margin-bottom: 15px; /* Space below the error message */
+  border-radius: 5px; /* Slightly rounded corners */
+  font-family: Arial, sans-serif; /* Example font */
+  font-size: 12px; /* Base font size */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  max-width: 400px; /* Limit the width of the message */
+  margin-left: auto; /* Center the block horizontally */
+  margin-right: auto; /* Center the block horizontally */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
