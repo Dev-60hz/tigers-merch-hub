@@ -1,19 +1,21 @@
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: url('NAGA COLLEGE FOUNDATION INC. HOME OF THE CHAMPION.png') no-repeat center center fixed; /* Replace with your image URL */
-  background-size: 50%; /* Ensures the background image covers the entire body */
+  background-size: 60%; /* Ensures the background image covers the entire body */
   background-color:#0d4418;
+  margin: 0;
   /*padding-top: 80px;  Space for the fixed header */
 }
 
 header {
   position: fixed; /* Fixes it relative to the viewport */
-  top: 0;          /* Positions it at the very top */
-  left: 0;         /* Aligns it to the left edge */
-  width: 100%;     /* Makes it span the full width of the viewport */
+  top: 0;      /* Positions it at the very top */
+  left: 0;     /* Aligns it to the left edge */
+  width: 100%;   /* Makes it span the full width of the viewport */
   background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
   color: white;
-  padding: 15px 20px; /* Adjust padding as needed */
+  padding: 1.2rem 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;   /* Ensures it stays on top of other content */
   display: flex; /* For internal alignment */
@@ -23,12 +25,17 @@ header {
 }
 
 main {
-  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1.8rem;
 }
 
 .namelogo {
   position: fixed;
-  top: -50px;  /* slight offset from the top */
+  top: -35px;  /* slight offset from the top */
   left: 80px; /* slight offset from the left */
   z-index: 1000; /* ensure it stays on top */
 }
@@ -48,7 +55,6 @@ ul {
   float:left;
   display: flex;
   justify-content: center;
-
   align-items:center;
   text-align:center;
 }
@@ -82,7 +88,7 @@ ul li a:hover {
 .logins button {
   margin-top: 15px;
   transition: 0.3s ease-in-out;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: 0.3s ease;
   box-shadow: 0 4px 15px rgba(115, 245, 250, 0.6);
 }
 
@@ -112,6 +118,13 @@ ul li a:hover {
   border-right: none;
   border-left: none;
   color: white;
+}
+
+.info {
+  font-family: sans-serif;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 ::placeholder {
@@ -162,21 +175,57 @@ ul li a:hover {
   letter-spacing: 1.4px;
 }
 
-/* style.css */
-
 .error-message {
-  color: #dc3545; /* A common red color for errors */
-  background-color: #f8d7da; /* Light red background */
-  border: 1px solid #f5c6cb; /* Slightly darker red border */
-  padding: 10px 15px; /* Padding inside the message box */
-  margin-bottom: 15px; /* Space below the error message */
-  border-radius: 5px; /* Slightly rounded corners */
-  font-family: Arial, sans-serif; /* Example font */
-  font-size: 12px; /* Base font size */
-  font-weight: bold; /* Make the text bold */
-  text-align: center; /* Center the text */
-  max-width: 400px; /* Limit the width of the message */
-  margin-left: auto; /* Center the block horizontally */
-  margin-right: auto; /* Center the block horizontally */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #dc3545;
+  background-color: #f8d7da; 
+  border: 1px solid #f5c6cb; 
+  padding: 10px 15px; 
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif; 
+  font-size: 12px; 
+  font-weight: bold; 
+  text-align: center; 
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  cursor: pointer;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.15);
+}
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1rem 1.25rem;
+  flex-grow: 1;
+}
+.product-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+}
+.product-price {
+  font-weight: 600;
+  color: #007bff;
+  font-size: 1.05rem;
 }

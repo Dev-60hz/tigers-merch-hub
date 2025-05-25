@@ -6,28 +6,20 @@
     <title>NCF Tigers</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<header>
+   
+</header>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="namelogo">
-                <h2 class="ncf"> NCF TIGERS MERCH HUB </h2>
-            </div>
-            <ul> 
-                <li><a href="home.php">HOME</a></li>
-                <li><a href="about.php">ABOUT</a></li>
-                <li><a href="products.php">PRODUCTS</a></li>
-                <li><a href="contact.php">CONTACT</a></li>
-            </ul>
+    <main>
+    <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1512499617640-c2f99968f449?auto=format&fit=crop&w=500&q=80" alt="Wireless Headphones" class="product-image" loading="lazy" />
+        <div class="product-info">
+            <h2 class="product-title">Wireless Headphones</h2>
+            <p class="product-price">$59.99</p>
         </div>
-        <div class="menuss">
-            <h2>Our Products</h2>
-            <p>
-                Browse a wide selection of NCF Tigers merchandise including t-shirts, hoodies,
-                caps, and more. Each product is designed with attention to detail and crafted to offer comfort and durability, perfect for game days or everyday wear.
-            </p>
-        </div>
-    </div>
+    </article>
+    </main>
+    
     
 
 </body>
-</html>

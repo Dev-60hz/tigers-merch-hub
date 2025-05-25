@@ -41,7 +41,6 @@ function isActiveForm($formName, $activeForm) {
         </ul>
         
     </div>
-    <nav>...</nav>
 </header>
 <body>
     <div class="main">
@@ -50,8 +49,8 @@ function isActiveForm($formName, $activeForm) {
             <form action="login_page.php" method="post">
                 <h2>LOGINS</h2>
                 <?= showError($errors['login']); ?>
-                <input type="email" name="gbox" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
+                <input type="email" name="gbox" placeholder="Email"> <i class='bx bxs-lock-alt'> </i>
+                <input type="password" name="password" placeholder="Password" required>
                 <button type="submit" name="login" class="loginbtn"><a>LOGIN</a></button>
 
                 <p class="info">Dont have an account?<br>Please ask to NCF Admins</p>
